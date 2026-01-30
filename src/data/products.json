@@ -1,0 +1,98 @@
+[
+  {
+    "id": "classic-sourdough",
+    "name": "Classic Sourdough",
+    "category": "bread",
+    "label": "Slow Fermentation",
+    "description": "72시간의 기다림 끝에 완성되는 오브의 시그니처 사워도우입니다. 유기농 호밀과 천연 발효종이 만들어내는 깊은 산미와 쫄깃한 식감을 경험해 보세요.",
+    "price": 8500,
+    "image": "https://images.unsplash.com/photo-1677825948767-5d379d012bda?auto=format&fit=crop&q=80&w=1600",
+    "layout": "main",
+    "detailDescription": "72시간의 기다림 끝에 완성되는 오브의 시그니처 사워도우입니다. 직접 배양한 천연 발효종과 유기농 호밀을 사용하여 깊은 산미와 쫄깃한 식감을 구현했습니다. 첨가물 없이 시간과 정성이 빚어낸 정직한 맛을 경험해 보세요.",
+    "ingredients": "유기농 밀가루(캐나다산), 천연 발효종, 호밀, 정제염, 물.",
+    "thumbnailImages": [
+      "https://images.unsplash.com/photo-1560427175-5a283bfaf1a4?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1628809643534-b3d1faffe8d2?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    "id": "vegan-brownie",
+    "name": "Vegan Brownie",
+    "category": "cake",
+    "label": "Raw Cacao",
+    "description": "정제 설탕 없이 코코아와 아가베 시럽으로 구현한 진한 초콜릿 브라우니입니다.",
+    "price": 3800,
+    "image": "https://images.unsplash.com/photo-1707070026861-ae45cb63d845?auto=format&fit=crop&q=80&w=1600",
+    "layout": "left",
+    "detailDescription": "정제 설탕 없이 코코아와 아가베 시럽으로 구현한 진한 초콜릿 브라우니입니다. 버터와 달걀 없이 코코넛오일과 두유로 촉촉한 식감을 냈으며, 견과류를 더해 고소함을 더했습니다.",
+    "ingredients": "코코아파우더, 유기농 밀가루, 아가베 시럽, 코코넛오일, 두유, 호두, 정제염.",
+    "thumbnailImages": [
+      "https://images.unsplash.com/photo-1611060516311-84aab2454de8?auto=format&fit=crop&q=80&w=800",
+      "https://images.pexels.com/photos/14576526/pexels-photo-14576526.jpeg?auto=format&fit=crop&crop=bottom&q=80&w=800"
+    ]
+  },
+  {
+    "id": "signature-oat-latte",
+    "name": "Signature Oat Latte",
+    "category": "coffee",
+    "label": "Direct Trade",
+    "description": "에티오피아 싱글 오리진 원두와 프리미엄 오트 밀크의 조화. 우유 없이도 라떼 본연의 크리미함과 견과류의 고소함을 완벽하게 경험하실 수 있습니다.",
+    "price": 7500,
+    "image": "https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&q=80&w=1200",
+    "layout": "square",
+    "detailDescription": "에티오피아 싱글 오리진 원두와 프리미엄 오트 밀크의 조화입니다. 우유 없이도 라떼 본연의 크리미함과 견과류의 고소함을 완벽하게 경험하실 수 있으며, 오브만의 로스팅으로 깔끔한 산미를 살렸습니다.",
+    "ingredients": "에티오피아 싱글 오리진 원두, 오트 밀크, 정제수.",
+    "thumbnailImages": [
+      "https://images.unsplash.com/photo-1630758769030-e58d72892314?auto=format&fit=crop&q=80&w=800",
+      "https://images.pexels.com/photos/32494593/pexels-photo-32494593.jpeg?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    "id": "rye-avocado-sandwich",
+    "name": "Rye Avocado Sandwich",
+    "category": "bread",
+    "label": "Fresh & Simple",
+    "description": "천연 발효 호밀빵에 익은 아보카도와 신선한 채소를 올린 심플한 샌드위치입니다.",
+    "price": 9500,
+    "image": "https://images.unsplash.com/photo-1650092194571-d3c1534562be?auto=format&fit=crop&q=80&w=1200",
+    "layout": "small",
+    "detailDescription": "천연 발효 호밀빵에 익은 아보카도와 신선한 채소를 올린 심플한 샌드위치입니다. 레몬즙과 허브로 맛을 살렸으며, 유제품 없이 비건 메이요로 부드럽게 마무리했습니다.",
+    "ingredients": "호밀빵, 아보카도, 로메인, 레몬즙, 비건 메이요, 정제염, 후추.",
+    "thumbnailImages": [
+      "https://images.unsplash.com/photo-1694495275364-497532d2b587?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1628556820645-63ba5f90e6a2?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    "id": "dark-choco-ganache",
+    "name": "Dark Choco Ganache",
+    "category": "cake",
+    "label": "Raw Cacao",
+    "description": "70% 다크 초콜릿의 묵직한 풍미를 비건 레시피로 구현했습니다.",
+    "price": 6500,
+    "image": "https://images.pexels.com/photos/10249461/pexels-photo-10249461.jpeg?auto=format&fit=crop&q=80&w=1600",
+    "layout": "wide",
+    "detailDescription": "70% 다크 초콜릿의 묵직한 풍미를 비건 레시피로 구현했습니다. 크림 대신 두유와 다크 초콜릿으로 가나슈를 만들어 부드럽고 진한 초콜릿 케이크를 완성했습니다.",
+    "ingredients": "70% 다크 초콜릿, 두유, 코코넛오일, 유기농 밀가루, 아가베 시럽, 코코아파우더, 정제염.",
+    "thumbnailImages": [
+      "https://images.unsplash.com/photo-1613669146965-507d0e72a688?auto=format&fit=crop&q=80&w=800",
+      "https://images.pexels.com/photos/7149383/pexels-photo-7149383.jpeg?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    "id": "origin-filter-brew",
+    "name": "Origin Filter Brew",
+    "category": "coffee",
+    "label": "Hand Brewed",
+    "description": "시즌별 가장 좋은 노트를 가진 싱글 오리진 생두를 선별하여 정성껏 내려드립니다. 원두 본연의 깨끗한 풍미를 느껴보세요.",
+    "price": 8000,
+    "image": "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?auto=format&fit=crop&crop=focalpoint&fp-x=0&fp-y=1&fp-z=1.1&q=80&w=800&h=1500",
+    "layout": "left",
+    "detailDescription": "시즌별 가장 좋은 노트를 가진 싱글 오리진 생두를 선별하여 핸드 드립으로 정성껏 내려드립니다. 원두 본연의 깨끗한 풍미와 산미를 그대로 느낄 수 있는 오브 시그니처 필터 커피입니다.",
+    "ingredients": "시즌 싱글 오리진 생두, 정제수.",
+    "thumbnailImages": [
+      "https://images.pexels.com/photos/16085964/pexels-photo-16085964.jpeg?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1553292218-4892c2e7e1ae?auto=format&fit=crop&q=80&w=800"
+    ]
+  }
+]

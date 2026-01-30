@@ -1,0 +1,174 @@
+[
+  {
+    "id": "strawberry-pure-essence",
+    "title": "Pure Strawberry\nHarvest.",
+    "category": "ongoing",
+    "season": "Spring 2026",
+    "description": "설탕 없이 오직 딸기 본연의 당도로만 빚어낸 봄의 미식. 급속 냉각으로 질감을 살린 비건 아이스크림과 층층이 쌓인 파르페의 향연.",
+    "period": "01.15 — 04.30",
+    "startDate": "2026-01-15",
+    "endDate": "2026-04-30",
+    "image": "https://images.unsplash.com/photo-1658309174812-8a9c02238232?auto=format&fit=crop&q=80&w=1600",
+    "layout": "default",
+    "deco": "Currently",
+    "detailLabel": "Seasonal Event 2026",
+    "detailTitle": "가장 붉게 익은 계절의 조각",
+    "detailIntro": "오브가 제안하는 이번 봄의 테마는 '딸기의 정수'입니다. 장식적인 화려함 대신 신선한 딸기 본연의 풍미를 차가운 디저트로 구현했습니다.",
+    "detailText": "캐슈넛 베이스의 진한 비건 크림과 딸기 소르베가 만나 탄생한 '딸기 아이스크림', 그리고 제철 딸기를 아낌없이 담아낸 '시그니처 파르페'를 만나보세요.",
+    "detailImages": [
+      "https://images.unsplash.com/photo-1658309174812-8a9c02238232?auto=format&fit=crop&q=80&w=1600",
+      "https://images.unsplash.com/photo-1592568260502-88771788953d?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1633933358116-a27b902fad35?auto=format&fit=crop&q=80&w=800"
+    ],
+    "menu": [
+      { "name": "Pure Strawberry Vegan Ice-cream", "price": 9500 },
+      { "name": "AUBE Signature Strawberry Parfait", "price": 16000 },
+      { "name": "Fresh Strawberry Sorbet", "price": 8500 }
+    ],
+    "duration": "January 15 — April 30",
+    "location": "AUBE Seongsu Atelier",
+    "ctaLabel": "Share the Moment",
+    "ctaTitle": "Invitation to\nSpring Dawn."
+  },
+  {
+    "id": "matcha-harvest-day",
+    "title": "Matcha\nHarvest Day.",
+    "category": "upcoming",
+    "season": "Summer 2026",
+    "description": "초여름의 싱그러움을 담은 유기농 말차 컬렉션. 찻잎을 직접 우려내고 비건 디저트와 페어링하는 워크숍입니다.",
+    "period": "Coming : 06.01 Open",
+    "startDate": "2026-06-01",
+    "endDate": "2026-07-31",
+    "image": "https://images.unsplash.com/photo-1624893578106-a98840591afc?auto=format&fit=crop&q=80&w=1200",
+    "layout": "left",
+    "deco": "Soon",
+    "detailLabel": "Upcoming Event 2026",
+    "detailTitle": "초여름의 싱그러움, 말차의 정수",
+    "detailIntro": "오브가 제안하는 여름의 특별한 경험. 유기농 말차 찻잎을 직접 우려내고, 비건 디저트와 완벽하게 페어링하는 워크숍입니다.",
+    "detailText": "우리는 화학 첨가물 없이 오직 자연의 풍미만을 추출합니다. 말차의 깊은 우마미와 비건 크림의 부드러움이 만나, 여름의 상쾌함을 선사합니다.",
+    "detailImages": [
+      "https://images.unsplash.com/photo-1624893578106-a98840591afc?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1631308491952-040f80133535?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1566373049939-704ea187ef98?auto=format&fit=crop&q=80&w=800"
+    ],
+    "menu": [
+      { "name": "Matcha Latte (Oat)", "price": 8500 },
+      { "name": "Matcha Roll Cake", "price": 12000 },
+      { "name": "Matcha Tiramisu", "price": 14000 }
+    ],
+    "duration": "June 1 — July 31",
+    "location": "AUBE Seongsu Atelier"
+  },
+  {
+    "id": "vanilla-bean-winter",
+    "title": "Warm Vanilla\n& Spiced Bread",
+    "category": "past",
+    "season": "Winter 2025",
+    "description": "차가운 겨울을 녹이는 최상급 마다가스카르 바닐라 빈의 향연. 직접 졸인 사과와 시나몬이 어우러진 따뜻한 디저트.",
+    "period": "Closed",
+    "startDate": "2025-12-01",
+    "endDate": "2025-12-31",
+    "image": "https://images.unsplash.com/photo-1682482001313-0581da8e2b58?auto=format&fit=crop&q=80&w=1200",
+    "layout": "square",
+    "detailLabel": "Past Event 2025",
+    "detailTitle": "바닐라 빈의 온기로 채운 겨울",
+    "detailIntro": "겨울의 고요함을 닮은 바닐라의 깊은 풍미. 천연 바닐라 빈이 선사하는 고급스러운 달콤함을 경험했던 지난겨울의 기록입니다.",
+    "detailText": "화학 향료 대신 진짜 바닐라 빈을 듬뿍 사용했습니다. 따끈하게 구워낸 스파이스 브레드와 바닐라 소스의 조화는 추운 날씨를 잊게 만드는 마법 같은 맛이었습니다.",
+    "detailImages": [
+      "https://images.unsplash.com/photo-1682482001313-0581da8e2b58?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1676300187401-ce5d7c886bc1?auto=format&fit=crop&q=80&w=800",
+      "https://plus.unsplash.com/premium_photo-1699986147156-ea08fa5d73fa?auto=format&fit=crop&q=80&w=800"
+    ],
+    "menu": [
+      { "name": "Vanilla Bean Spiced Bread", "price": 12000 },
+      { "name": "Warm Apple Vanilla Tea", "price": 7500 },
+      { "name": "Handmade Vanilla Glaze Donut", "price": 5500 }
+    ],
+    "duration": "December 1 — December 31",
+    "location": "AUBE Seongsu Atelier"
+  },
+  {
+    "id": "roasted-chestnut-autumn",
+    "title": "Roasted Chestnut\n& Dark Rye",
+    "category": "past",
+    "season": "Autumn 2025",
+    "description": "가을의 깊은 맛을 전하는 구운 밤 컬렉션. 거친 호밀 빵 속에 담긴 포슬포슬하고 달콤한 가을의 수확.",
+    "period": "Closed",
+    "startDate": "2025-09-01",
+    "endDate": "2025-11-30",
+    "image": "https://images.unsplash.com/photo-1758107957625-2b8047ada2e4?auto=format&fit=crop&q=80&w=1200",
+    "layout": "left",
+    "detailLabel": "Past Event 2025",
+    "detailTitle": "구운 밤과 호밀이 전하는 가을의 안부",
+    "detailIntro": "가을 햇살 아래 익은 고소한 밤. 정성껏 구워낸 밤을 활용한 샌드위치와 디저트로 풍요로운 가을을 나누었습니다.",
+    "detailText": "포슬포슬한 밤 본연의 식감을 살리기 위해 최소한의 조리법을 고수했습니다. 고소한 다크 호밀 브레드와의 페어링은 가을의 정취를 만끽하기에 충분했습니다.",
+    "detailImages": [
+      "https://images.unsplash.com/photo-1758107957625-2b8047ada2e4?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1668723995998-767d91d62329?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1617331721523-74863928da29?auto=format&fit=crop&q=80&w=800"
+    ],
+    "menu": [
+      { "name": "Roasted Chestnut Rye Sandwich", "price": 13500 },
+      { "name": "Autumn Chestnut Latte", "price": 8500 },
+      { "name": "Chestnut Cream Mont-Blanc", "price": 15000 }
+    ],
+    "duration": "September 1 — November 30",
+    "location": "AUBE Seongsu Atelier"
+  },
+  {
+    "id": "oat-milk-brewing",
+    "title": "The Oat Milk\nBarista Pop-up",
+    "category": "past",
+    "season": "Summer 2025",
+    "description": "우유 없이도 완벽한 라떼 아트를 구현하는 오트 밀크 브루잉 세션. 지속 가능한 커피 문화를 공유한 현장.",
+    "period": "Closed",
+    "startDate": "2025-06-01",
+    "endDate": "2025-08-31",
+    "image": "https://images.unsplash.com/photo-1529892485617-25f63cd7b1e9?auto=format&fit=crop&q=80&w=2000",
+    "layout": "wide",
+    "detailLabel": "Past Event 2025",
+    "detailTitle": "우유 없이도 완벽한 라떼 아트",
+    "detailIntro": "오브가 선사한 여름의 특별한 경험. 우유 없이도 완벽한 라떼 아트를 구현하는 오트 밀크 브루잉 세션으로 지속 가능한 커피 문화를 공유했습니다.",
+    "detailText": "오트 밀크의 부드러운 질감과 고소한 풍미가 에스프레소와 완벽하게 어우러집니다. 비건 라떼 아트의 아름다움을 경험하고, 지속 가능한 커피 문화의 가치를 함께 나눴습니다.",
+    "detailImages": [
+      "https://images.unsplash.com/photo-1529892485617-25f63cd7b1e9?auto=format&fit=crop&q=80&w=2000",
+      "https://images.unsplash.com/photo-1563311977-d285756282dc?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1691616082780-cd4bdde78197?auto=format&fit=crop&q=80&w=800"
+    ],
+    "menu": [
+      { "name": "Oat Milk Latte", "price": 7500 },
+      { "name": "Oat Milk Cappuccino", "price": 8000 },
+      { "name": "Oat Milk Flat White", "price": 8500 }
+    ],
+    "duration": "June 1 — August 31",
+    "location": "AUBE Seongsu Atelier"
+  },
+  {
+    "id": "slow-baking-starter",
+    "title": "AUBE Slow Baking\nFoundation",
+    "category": "past",
+    "season": "Foundation 2024",
+    "description": "천연 발효종을 이용한 '느린 빵'의 가치를 배우는 입문 워크숍 기록입니다.",
+    "period": "Closed",
+    "startDate": "2024-01-01",
+    "endDate": "2024-12-31",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1200",
+    "layout": "small",
+    "detailLabel": "Foundation Event 2024",
+    "detailTitle": "천연 발효종을 이용한 '느린 빵'의 가치",
+    "detailIntro": "오브의 시작을 함께했던 첫 번째 워크숍. 천연 발효종을 이용한 '느린 빵'의 가치를 배우고, 시간과 정성이 빚어내는 맛의 의미를 함께 나눴습니다.",
+    "detailText": "화학 효모 대신 자연의 힘으로 빚어내는 빵의 맛과 향. 천연 발효종을 직접 배양하고, 긴 시간 발효시켜 만든 빵은 단순한 음식이 아닌 정성의 결과물입니다.",
+    "detailImages": [
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1610364274504-7c79ce864793?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1581339399838-2a120c18bba3?auto=format&fit=crop&q=80&w=800"
+    ],
+    "menu": [
+      { "name": "Sourdough Starter Workshop", "price": 50000 },
+      { "name": "Slow Bread Baking Class", "price": 60000 },
+      { "name": "Natural Fermentation Guide", "price": 45000 }
+    ],
+    "duration": "January 1 — December 31",
+    "location": "AUBE Seongsu Atelier"
+  }
+]
