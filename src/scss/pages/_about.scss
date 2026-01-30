@@ -208,10 +208,8 @@
   padding: $sp-2xl;
   border: 1px solid rgba($clr-main, 0.03);
   background: rgba($clr-point-sand, 0.15);
-  transition:
-    transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
-    box-shadow 0.6s ease,
-    background 0.6s ease;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 0.6s ease, background 0.6s ease;
 
   &:hover {
     transform: translateY(-$sp-md);
@@ -225,20 +223,21 @@
 
   &__num {
     position: absolute;
-    top: -$sp-3xl;
+    top: -$sp-2xl;
     right: $sp-md;
     z-index: 1;
-    color: rgba($clr-main, 0.06);
+    color: rgba($clr-main, 0.1);
     font-family: var(--serif);
     font-style: italic;
     line-height: 1;
     pointer-events: none;
     transition: color 0.6s ease;
-    font-size: 6rem;
+    font-size: 10rem;
 
-    @include small-mobile {
-      top: -$sp-xl;
+    @include mobile {
+      top: -$sp-md;
       right: $sp-md;
+      font-size: 7rem;
     }
   }
 

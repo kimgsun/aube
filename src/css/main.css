@@ -996,21 +996,22 @@ h3,
 }
 .value-card__num {
   position: absolute;
-  top: -4rem;
+  top: -3rem;
   right: 1rem;
   z-index: 1;
-  color: rgba(65, 65, 65, 0.06);
+  color: rgba(65, 65, 65, 0.1);
   font-family: var(--serif);
   font-style: italic;
   line-height: 1;
   pointer-events: none;
   transition: color 0.6s ease;
-  font-size: 6rem;
+  font-size: 10rem;
 }
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .value-card__num {
-    top: -2rem;
+    top: -1rem;
     right: 1rem;
+    font-size: 7rem;
   }
 }
 .value-card__content {
@@ -2292,10 +2293,16 @@ h3,
   font-size: clamp(1.8rem, 1.4rem + 1vw, 2.6rem);
 }
 .location-form__subtitle {
+  margin-bottom: 0;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   opacity: 0.4;
   font-size: clamp(1.4rem, 1.2rem + 0.5vw, 1.6rem);
+}
+.location-form__required-hint {
+  margin: 0 0 0.5rem 0;
+  opacity: 0.5;
+  font-size: 1rem;
 }
 .location-form__grid {
   display: grid;
@@ -2358,13 +2365,9 @@ h3,
 .location-form__input--full {
   grid-column: 1/-1;
 }
-.location-form__input:focus {
+.location-form__input:focus, .location-form__input:focus-visible {
   outline: none;
   border-bottom-color: var(--color-main);
-}
-.location-form__input:focus-visible {
-  outline: 2px solid #414141;
-  outline-offset: 2px;
 }
 .location-form__input--error {
   border-bottom-color: #c45c5c;
@@ -2374,5 +2377,4 @@ h3,
 }
 .location-form__input::placeholder {
   color: rgba(65, 65, 65, 0.5);
-}
 }
