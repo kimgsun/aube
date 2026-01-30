@@ -1,0 +1,317 @@
+.about-hero {
+  margin: 0 auto;
+  padding: $sp-6xl 0 $sp-2xl;
+
+  @include small-mobile {
+    padding: $sp-6xl 0 $sp-xl;
+  }
+
+  &__label {
+    margin-bottom: $sp-lg;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-size: $fs-body-sm;
+  }
+
+  &__title {
+    margin-bottom: $sp-2xl;
+    line-height: 1.1;
+    font-size: $fs-hero;
+
+    &-italic {
+      font-style: italic;
+    }
+  }
+}
+
+.about-story {
+  margin: 0 auto;
+  padding: 0 0 $sp-6xl;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $sp-md;
+  }
+
+  &__text {
+    grid-column: 6 / -1;
+
+    @include small-mobile {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__intro {
+    margin-bottom: $sp-xl;
+    font-weight: 300;
+    line-height: $lh-base;
+    letter-spacing: -0.02em;
+    font-size: $fs-body-lg;
+
+    @include small-mobile {
+      line-height: $lh-mobile;
+    }
+  }
+
+  &__description {
+    @include body-text;
+  }
+}
+
+.about-visual {
+  margin: 0 auto;
+  padding: 0 0 $sp-6xl;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $sp-md;
+  }
+
+  &__sidebar {
+    grid-column: 1 / 5;
+    margin-bottom: 0;
+
+    @include small-mobile {
+      grid-column: 1 / -1;
+      margin-bottom: $sp-2xl;
+    }
+  }
+
+  &__sticky {
+    position: sticky;
+    top: $sp-6xl;
+
+    @include small-mobile {
+      position: static;
+    }
+  }
+
+  &__heading {
+    margin-bottom: $sp-lg;
+    font-style: italic;
+    font-size: $fs-subtitle;
+  }
+
+  &__subtitle {
+    margin-bottom: $sp-lg;
+    color: rgba($clr-main, 0.5);
+    line-height: $lh-base;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: $fs-body;
+
+    @include small-mobile {
+      line-height: $lh-mobile;
+    }
+  }
+
+  &__text {
+    @include body-text;
+  }
+
+  &__images {
+    grid-column: 6 / -1;
+
+    @include small-mobile {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    margin-bottom: $sp-2xl;
+    background-color: $clr-border;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.about-values {
+  padding: $sp-5xl 0;
+  background-color: $white;
+
+  &__header {
+    margin-bottom: $sp-5xl;
+  }
+
+  &__title {
+    margin-bottom: $sp-md;
+    font-style: italic;
+    font-size: $fs-display;
+  }
+
+  &__label {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-size: $fs-body;
+
+    @include small-mobile {
+      letter-spacing: 0.2em;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0;
+    overflow: visible;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: $sp-2xl 0;
+    }
+  }
+
+  &__item {
+    overflow: visible;
+
+    &:nth-child(1) {
+      grid-column: 1 / 6;
+    }
+
+    &:nth-child(2) {
+      grid-column: 7 / -1;
+      padding-top: $sp-7xl;
+
+      @include mobile {
+        padding-top: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      grid-column: 3 / 8;
+      margin-top: $sp-4xl;
+
+      @include mobile {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.value-card {
+  position: relative;
+  overflow: visible;
+  padding: $sp-2xl;
+  border: 1px solid rgba($clr-main, 0.03);
+  background: rgba($clr-point-sand, 0.15);
+  transition:
+    transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 0.6s ease,
+    background 0.6s ease;
+
+  &:hover {
+    transform: translateY(-$sp-md);
+    box-shadow: 0 $sp-md $sp-2xl rgba($clr-main, 0.05);
+    background: rgba($clr-point-sand, 0.2);
+
+    .value-card__num {
+      color: rgba($clr-point-sand, 0.3);
+    }
+  }
+
+  &__num {
+    position: absolute;
+    top: -$sp-3xl;
+    right: $sp-md;
+    z-index: 1;
+    color: rgba($clr-main, 0.06);
+    font-family: var(--serif);
+    font-style: italic;
+    line-height: 1;
+    pointer-events: none;
+    transition: color 0.6s ease;
+    font-size: 6rem;
+
+    @include small-mobile {
+      top: -$sp-xl;
+      right: $sp-md;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+
+    .value-card__title {
+      margin-bottom: $sp-lg;
+      font-style: italic;
+      letter-spacing: 0.05em;
+      font-size: $fs-subtitle;
+    }
+
+    .value-card__text {
+      margin-bottom: $sp-xl;
+      @include body-text;
+    }
+
+    .value-card__divider {
+      width: 30px;
+      height: 1px;
+      background-color: rgba($clr-main, 0.2);
+    }
+  }
+}
+
+.about-materials {
+  margin: 0 auto;
+  padding: $sp-5xl 0;
+  text-align: center;
+
+  @include small-mobile {
+    padding: $sp-5xl 0;
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: $sp-3xl;
+    letter-spacing: 0.15em;
+    font-size: $fs-subtitle;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $sp-lg;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $sp-md;
+    border-bottom: 1px solid $clr-bg-light;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    font-size: $fs-body;
+
+    @include small-mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    text-align: left;
+  }
+
+  &__value {
+    color: rgba($clr-main, 0.5);
+    text-align: right;
+
+    @include small-mobile {
+      text-align: left;
+    }
+  }
+}

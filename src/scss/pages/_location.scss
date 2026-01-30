@@ -1,0 +1,340 @@
+.location-hero {
+  margin: 0 auto;
+  padding: $sp-6xl 0 $sp-4xl;
+  text-align: center;
+  line-height: $lh-base;
+
+  @include mobile {
+    padding: $sp-6xl 0 $sp-3xl;
+    text-align: left;
+  }
+
+  &__title {
+    margin-bottom: $sp-lg;
+    font-style: italic;
+    font-size: $fs-hero;
+  }
+
+  &__subtitle {
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-size: $fs-body;
+  }
+}
+
+.location-info {
+  margin: 0 auto;
+  padding: 0 0 $sp-7xl;
+
+  @include mobile {
+    padding: 0 0 $sp-4xl;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: flex-start;
+    gap: $sp-3xl;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+
+  &__text {
+    grid-column: 1 / 6;
+
+    @include mobile {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__section {
+    margin-bottom: $sp-4xl;
+
+    @include mobile {
+      margin-bottom: $sp-3xl;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    margin-bottom: $sp-md;
+    color: $clr-point-sage;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: $fs-body;
+  }
+
+  &__title {
+    font-weight: 300;
+    line-height: $lh-base;
+    font-size: $fs-subtitle;
+  }
+
+  &__subtitle {
+    color: rgba($clr-main, 0.5);
+    font-weight: 300;
+    font-style: italic;
+    font-size: $fs-body;
+  }
+
+  &__hours {
+    display: flex;
+    flex-direction: column;
+    gap: $sp-xs;
+  }
+
+  &__hour-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $clr-bg-light;
+    font-weight: 300;
+    font-size: $fs-body;
+  }
+
+  &__hour-closed {
+    color: $clr-point-sage;
+    font-style: italic;
+  }
+
+  &__detail {
+    margin-bottom: $sp-sm;
+    font-weight: 300;
+    font-size: $fs-body;
+
+    &:last-child {
+      @include mobile {
+        margin-bottom: $sp-xl;
+      }
+    }
+  }
+
+  &__map {
+    grid-column: 7 / -1;
+    width: 100%;
+    height: 360px;
+    min-height: 360px;
+    overflow: hidden;
+    border-radius: $sp-xs;
+    background-color: $clr-border;
+    filter: grayscale(0.3);
+    transition: filter $transition-base;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+
+    #location-map {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include mobile {
+      grid-column: 1 / -1;
+      height: 300px;
+      min-height: 300px;
+    }
+  }
+
+  .custom-marker {
+    border: none;
+    background: none;
+  }
+
+  .marker-pin {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: $sp-xs solid $white;
+    border-radius: 50% 50% 50% 0;
+    background-color: $clr-main;
+    box-shadow: 0 $sp-xs $sp-sm rgba($clr-main, 0.3);
+    transform: rotate(-45deg);
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $white;
+      content: "";
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .map-popup {
+    padding: $sp-sm;
+    text-align: center;
+  }
+}
+
+.location-access {
+  padding: $sp-5xl 0;
+  background-color: $white;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $sp-3xl;
+    margin: 0 auto;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 1px solid rgba($clr-main, 0.05);
+    transition: opacity $transition-base;
+
+    &:hover {
+      opacity: 0.95;
+    }
+  }
+
+  &__num {
+    position: absolute;
+    top: 0;
+    left: -$sp-md;
+    background-color: var(--color-bg-light);
+    color: var(--color-point-sand);
+    font-family: var(--serif);
+    font-style: italic;
+    line-height: 1;
+    font-size: $fs-subtitle;
+  }
+
+  &__card-title {
+    margin-bottom: $sp-lg;
+    font-style: italic;
+    font-size: $fs-subtitle;
+  }
+
+  &__card-text {
+    @include body-text;
+  }
+}
+
+.location-form {
+  margin: 0 auto;
+  padding: $sp-6xl 0;
+
+  &__header {
+    margin-bottom: $sp-3xl;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: $sp-md;
+    font-style: italic;
+    font-size: $fs-subtitle;
+  }
+
+  &__subtitle {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-size: $fs-body;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $sp-2xl;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+
+  &__field {
+    &--full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__error {
+    display: block;
+    margin-top: $sp-xs;
+    color: $clr-error;
+    font-weight: 400;
+    font-size: $fs-caption;
+  }
+
+  &__submit {
+    padding-top: $sp-xl;
+    text-align: center;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: $sp-md $sp-2xl;
+    border: 1px solid $clr-main;
+    background: transparent;
+    color: $clr-main;
+    letter-spacing: 0.2em;
+    font-size: $fs-body-sm;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+      opacity $transition-base,
+      color $transition-base,
+      background-color $transition-base;
+
+    &:hover {
+      background-color: $clr-main;
+      color: $white;
+      opacity: 0.95;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: $sp-md 0;
+    border: none;
+    border-bottom: 1px solid rgba($clr-main, 0.2);
+    background: transparent;
+    color: $clr-main;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: $fs-body;
+    letter-spacing: -0.02em;
+    transition: border-color $transition-base;
+
+    &--full {
+      grid-column: 1 / -1;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom-color: var(--color-main);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $clr-main;
+      outline-offset: 2px;
+    }
+
+    &--error {
+      border-bottom-color: $clr-error;
+    }
+
+    &::placeholder {
+      color: rgba($clr-main, 0.5);
+    }
+  }
+}
