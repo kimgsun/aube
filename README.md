@@ -68,29 +68,25 @@ aube/
 │   ├── brand-guide.md           # 기획·디자인 가이드
 │   ├── coding-conventions.md    # 코딩 컨벤션
 │   └── accessibility-report.md  # 접근성 리포트
-│
-├── src/
-│   ├── css/
-│   │   └── main.css             # 컴파일된 CSS
-│   ├── image/
-│   │   └── favicon.png          # 파비콘
-│   │
-│   ├── scss/
-│   │   ├── base/                # Vars, Mixins, Reset
-│   │   ├── layout/              # Header, Footer
-│   │   ├── components/          # Common
-│   │   ├── pages/               # 페이지별 스타일
-│   │   └── main.scss            # Entry point
-│   │
-│   ├── js/
-│   │   ├── common.js            # 네비 토글, reveal, initFilter(필터 공통)
-│   │   ├── map.js               # location 지도
-│   │   ├── products/            # filter, render
-│   │   └── events/              # filter, render
-│   │
-│   └── data/
-│       ├── products.json        # 메뉴 데이터
-│       └── events.json          # 이벤트 데이터
+└── src/
+    ├── css/
+    │   └── main.css             # 컴파일된 CSS
+    ├── image/
+    │   └── favicon.png          # 파비콘
+    ├── scss/
+    │   ├── base/                # Vars, Mixins, Reset
+    │   ├── layout/              # Header, Footer
+    │   ├── components/          # Common
+    │   ├── pages/               # 페이지별 스타일
+    │   └── main.scss            # Entry point
+    ├── js/
+    │   ├── common.js            # 네비 토글, reveal, initFilter(필터 공통)
+    │   ├── map.js               # location 지도
+    │   ├── products/            # filter, render
+    │   └── events/              # filter, render
+    └── data/
+        ├── products.json        # 메뉴 데이터
+        └── events.json          # 이벤트 데이터
 ```
 
 <br/>
