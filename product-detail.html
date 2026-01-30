@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Sourdough | AUBE</title>
+    <link rel="icon" type="image/png" href="src/image/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Sans+KR:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">AUBE</a>
+        <ul class="nav__menu" id="nav-menu">
+          <li>
+            <a href="about.html" class="nav__link">STORY</a>
+          </li>
+          <li>
+            <a href="product.html" class="nav__link nav__link--active">MENU</a>
+          </li>
+          <li>
+            <a href="location.html" class="nav__link">LOCATION</a>
+          </li>
+          <li>
+            <a href="event.html" class="nav__link">EVENTS</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="nav__toggle"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <article class="product-detail">
+        <div class="container">
+          <div class="product-detail__grid">
+            <div class="product-detail__gallery">
+              <div class="product__gallery reveal active">
+                <div class="product-detail__main-image">
+                  <div class="product__image">
+                    <img
+                      src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=1200"
+                      alt="클래식 사워도우 메인 이미지"
+                    />
+                  </div>
+                </div>
+                <div class="product-detail__thumbnails">
+                  <div class="product-detail__thumbnail">
+                    <div class="product__image">
+                      <img
+                        src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&q=80&w=800"
+                        alt="제품 디테일 1"
+                      />
+                    </div>
+                  </div>
+                  <div class="product-detail__thumbnail">
+                    <div class="product__image">
+                      <img
+                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=800"
+                        alt="제품 디테일 2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-detail__info">
+              <div class="reveal active">
+                <p class="product-detail__label">Slow Fermentation</p>
+                <h1 class="product-detail__title serif">Classic Sourdough</h1>
+                <p class="product-detail__price serif">₩ 8,500</p>
+
+                <div class="product-detail__section">
+                  <h3 class="product-detail__section-title">Description</h3>
+                  <p class="product-detail__section-text">
+                    72시간의 기다림 끝에 완성되는 오브의 시그니처
+                    사워도우입니다. 직접 배양한 천연 발효종과 유기농 호밀을
+                    사용하여 깊은 산미와 쫄깃한 식감을 구현했습니다. 첨가물 없이
+                    시간과 정성이 빚어낸 정직한 맛을 경험해 보세요.
+                  </p>
+                </div>
+                <div class="product-detail__section">
+                  <h3 class="product-detail__section-title">Ingredients</h3>
+                  <p class="product-detail__ingredients">
+                    유기농 밀가루(캐나다산), 천연 발효종, 호밀, 정제염, 물.
+                  </p>
+                </div>
+
+                <div class="product-detail__actions">
+                  <a
+                    href="location.html"
+                    class="product-detail__button product-detail__button--primary"
+                  >
+                    Inquiry for Reservation
+                  </a>
+                  <a
+                    href="product.html"
+                    class="product-detail__button product-detail__button--secondary"
+                  >
+                    Back to Menu
+                  </a>
+                </div>
+
+                <div class="product-detail__notice">
+                  <p class="product-detail__notice-text">
+                    * AUBE의 모든 제품은 동물성 재료를 일절 사용하지 않는 100%
+                    비건 제품입니다. 당일 생산 및 판매를 원칙으로 하며, 단체
+                    주문은 최소 3일 전 문의 부탁드립니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="product-related">
+        <div class="container">
+          <div class="product-related__container">
+            <h2 class="product-related__title serif reveal">
+              You may also like
+            </h2>
+            <div class="product-related__grid"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <h2 class="footer__title serif">AUBE</h2>
+            <p class="footer__text">
+              Premium Vegan Bakery<br />& Specialty Coffee Cafe
+            </p>
+          </div>
+          <div class="footer__grid">
+            <div class="footer__col">
+              <h4 class="footer__heading">Contact</h4>
+              <p class="footer__text">
+                서울특별시 성동구 성수이로 123-45<br />02-1234-5678<br />info@aube.com
+              </p>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__heading">Hours</h4>
+              <p class="footer__text">
+                Tue - Sun : 08:00 - 20:00<br />Monday : Closed
+              </p>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__heading">Social</h4>
+              <ul class="footer__menu">
+                <li>
+                  <a href="#" class="footer__link" aria-label="Instagram 열기"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__link" aria-label="Pinterest 열기"
+                    >Pinterest</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 AUBE. All Rights Reserved.</p>
+          <p>Designed by kimgsun</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+    <script src="src/js/products/render.js"></script>
+  </body>
+</html>

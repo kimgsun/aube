@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location | AUBE</title>
+    <link rel="icon" type="image/png" href="src/image/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Sans+KR:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">AUBE</a>
+        <ul class="nav__menu" id="nav-menu">
+          <li>
+            <a href="about.html" class="nav__link">STORY</a>
+          </li>
+          <li>
+            <a href="product.html" class="nav__link">MENU</a>
+          </li>
+          <li>
+            <a href="location.html" class="nav__link nav__link--active"
+              >LOCATION</a
+            >
+          </li>
+          <li>
+            <a href="event.html" class="nav__link">EVENTS</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="nav__toggle"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="location-hero">
+        <div class="container">
+          <div class="reveal">
+            <h1 class="location-hero__title serif">Visit Our Space</h1>
+            <p class="location-hero__subtitle">새벽의 고요함이 머무는 공간</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-info">
+        <div class="container">
+          <div class="location-info__grid">
+            <div class="location-info__text reveal">
+              <div class="location-info__section">
+                <h2 class="location-info__label">Address</h2>
+                <p class="location-info__title">
+                  서울특별시 성동구 성수이로 123-45
+                </p>
+                <p class="location-info__subtitle">
+                  123-45, Seongsui-ro, Seongdong-gu, Seoul
+                </p>
+              </div>
+
+              <div class="location-info__section">
+                <h2 class="location-info__label">Opening Hours</h2>
+                <ul class="location-info__hours">
+                  <li class="location-info__hour-item">
+                    <span>Tue - Sun</span>
+                    <span>08:00 - 20:00</span>
+                  </li>
+                  <li class="location-info__hour-item">
+                    <span>Monday</span>
+                    <span class="location-info__hour-closed">Closed</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="location-info__section">
+                <h2 class="location-info__label">Contact</h2>
+                <p class="location-info__detail">T. 02-1234-5678</p>
+                <p class="location-info__detail">E. info@aube.com</p>
+              </div>
+            </div>
+
+            <div class="location-info__map reveal reveal-delay-2">
+              <div id="location-map"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-access">
+        <div class="container">
+          <div class="location-access__grid">
+            <div class="location-access__card reveal reveal-delay-1">
+              <span class="location-access__num serif">1</span>
+              <h3 class="location-access__card-title serif">By Subway</h3>
+              <p class="location-access__card-text">
+                2호선 성수역 3번 출구에서 도보 7분 거리입니다. <br />
+                직진 후 성수이로 사거리에서 우회전하여 100m 지점에 위치하고
+                있습니다.
+              </p>
+            </div>
+
+            <div class="location-access__card reveal reveal-delay-3">
+              <span class="location-access__num serif">2</span>
+              <h3 class="location-access__card-title serif">By Bus</h3>
+              <p class="location-access__card-text">
+                성수초등학교 앞 정류장(ID: 04-123) 하차 후 <br />
+                파란색 간판 건물을 끼고 골목으로 들어오시면 <br />
+                AUBE의 나무 문을 찾으실 수 있습니다.
+              </p>
+            </div>
+
+            <div class="location-access__card reveal reveal-delay-5">
+              <span class="location-access__num serif">3</span>
+              <h3 class="location-access__card-title serif">Parking</h3>
+              <p class="location-access__card-text">
+                매장 전면 주차장에 최대 3대까지 무료 주차가 가능합니다. <br />
+                만차 시 인근 공영 주차장 이용을 권장해 드립니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-form">
+        <div class="container">
+          <div class="reveal">
+            <div class="location-form__header">
+              <h2 class="location-form__title serif">Inquiry</h2>
+              <p class="location-form__subtitle">대관 및 단체 주문 문의</p>
+            </div>
+
+            <form
+              id="inquiry-form"
+              aria-label="대관 및 단체 주문 문의 폼"
+              novalidate
+            >
+              <div class="location-form__grid">
+                <div class="location-form__field">
+                  <label for="inquiry-name" class="visually-hidden">이름</label>
+                  <input
+                    id="inquiry-name"
+                    name="name"
+                    type="text"
+                    placeholder="NAME"
+                    class="location-form__input"
+                    aria-label="이름 입력"
+                    required
+                  />
+                  <span
+                    class="location-form__error"
+                    id="error-name"
+                    aria-live="polite"
+                  ></span>
+                </div>
+                <div class="location-form__field">
+                  <label for="inquiry-phone" class="visually-hidden"
+                    >전화번호</label
+                  >
+                  <input
+                    id="inquiry-phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="PHONE"
+                    class="location-form__input"
+                    aria-label="전화번호 입력"
+                    required
+                    maxlength="13"
+                    autocomplete="tel"
+                  />
+                  <span
+                    class="location-form__error"
+                    id="error-phone"
+                    aria-live="polite"
+                  ></span>
+                </div>
+              </div>
+              <div class="location-form__grid">
+                <div class="location-form__field location-form__field--full">
+                  <label for="inquiry-subject" class="visually-hidden"
+                    >제목</label
+                  >
+                  <input
+                    id="inquiry-subject"
+                    name="subject"
+                    type="text"
+                    placeholder="SUBJECT"
+                    class="location-form__input location-form__input--full"
+                    aria-label="제목 입력"
+                    required
+                  />
+                  <span
+                    class="location-form__error"
+                    id="error-subject"
+                    aria-live="polite"
+                  ></span>
+                </div>
+              </div>
+              <div class="location-form__grid">
+                <label for="inquiry-message" class="visually-hidden"
+                  >메시지</label
+                >
+                <textarea
+                  id="inquiry-message"
+                  name="message"
+                  placeholder="MESSAGE"
+                  rows="4"
+                  class="location-form__input location-form__input--full"
+                  aria-label="메시지 입력"
+                ></textarea>
+              </div>
+
+              <div class="location-form__submit">
+                <button
+                  type="submit"
+                  class="location-form__button"
+                  aria-label="메시지 전송"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <h2 class="footer__title serif">AUBE</h2>
+            <p class="footer__text">
+              Premium Vegan Bakery<br />& Specialty Coffee Cafe
+            </p>
+          </div>
+          <div class="footer__grid">
+            <div class="footer__col">
+              <h4 class="footer__heading">Contact</h4>
+              <p class="footer__text">
+                서울특별시 성동구 성수이로 123-45<br />02-1234-5678<br />info@aube.com
+              </p>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__heading">Hours</h4>
+              <p class="footer__text">
+                Tue - Sun : 08:00 - 20:00<br />Monday : Closed
+              </p>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__heading">Social</h4>
+              <ul class="footer__menu">
+                <li>
+                  <a href="#" class="footer__link" aria-label="Instagram 열기"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__link" aria-label="Pinterest 열기"
+                    >Pinterest</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 AUBE. All Rights Reserved.</p>
+          <p>Designed by kimgsun</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="src/js/common.js"></script>
+    <script src="src/js/map.js"></script>
+  </body>
+</html>

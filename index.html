@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUBE</title>
+    <link rel="icon" type="image/png" href="src/image/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Sans+KR:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">AUBE</a>
+        <ul class="nav__menu" id="nav-menu">
+          <li>
+            <a href="about.html" class="nav__link">STORY</a>
+          </li>
+          <li>
+            <a href="product.html" class="nav__link">MENU</a>
+          </li>
+          <li>
+            <a href="location.html" class="nav__link">LOCATION</a>
+          </li>
+          <li>
+            <a href="event.html" class="nav__link">EVENTS</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="nav__toggle"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__subtitle">The Ethics of Taste</p>
+          <h1 class="hero__title serif">AUBE</h1>
+          <p class="hero__description">새벽의 고요함이 빚어낸 미식의 순간</p>
+        </div>
+      </section>
+
+      <section class="philosophy">
+        <div class="container">
+          <div class="philosophy__grid">
+            <div class="philosophy__text reveal">
+              <h2 class="philosophy__title serif">
+                "우리는 미식의 즐거움이<br />
+                환경과 생명을 해치지 않아야 한다고 믿습니다."
+              </h2>
+              <p class="philosophy__description">
+                비건은 단순히 대안이 아닙니다. 매일 새벽 가장 신선한 식물성
+                재료를 선별하여, 유제품과 달걀 없이도 깊은 풍미를 구현하는 장인
+                정신의 결과물입니다. 오브가 선사하는 가볍고 활기찬 아침을 경험해
+                보세요.
+              </p>
+              <a href="about.html" class="button--outline">Explore Story</a>
+            </div>
+            <div class="philosophy__image reveal reveal-delay-2">
+              <img
+                src="https://images.pexels.com/photos/14565958/pexels-photo-14565958.jpeg?auto=format&fit=crop&q=80&w=1000"
+                alt="포장된 빵 상품 이미지"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu">
+        <div class="container">
+          <header class="menu__header">
+            <div class="menu__header-group">
+              <p class="menu__header-label">Signature Selection</p>
+              <h2 class="menu__header-title serif">Daily Baked</h2>
+            </div>
+
+            <div class="menu__header-link">
+              <a href="product.html" aria-label="전체 메뉴 보기"
+                >View All Menu</a
+              >
+            </div>
+          </header>
+          <div class="menu__grid"></div>
+        </div>
+      </section>
+
+      <section class="values">
+        <div class="container">
+          <h2 class="values__title reveal">Our Core Values</h2>
+          <div class="values__grid reveal">
+            <article class="values__item">
+              <h4 class="values__item-title serif">Naturalism</h4>
+              <p class="values__item-text">
+                가공되지 않은 순수한 대지의 재료만을 사용합니다.
+              </p>
+            </article>
+            <article class="values__item">
+              <h4 class="values__item-title serif">Minimalism</h4>
+              <p class="values__item-text">
+                불필요한 장식을 배제하고 본연의 맛에 집중합니다.
+              </p>
+            </article>
+            <article class="values__item">
+              <h4 class="values__item-title serif">Craftsmanship</h4>
+              <p class="values__item-text">
+                매일 새벽, 정성 어린 손길로 미식을 구워냅니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <h2 class="footer__title serif">AUBE</h2>
+            <p class="footer__text">
+              Premium Vegan Bakery<br />& Specialty Coffee Cafe
+            </p>
+          </div>
+          <div class="footer__grid">
+            <div class="footer__col">
+              <h4 class="footer__heading">Contact</h4>
+              <p class="footer__text">
+                서울특별시 성동구 성수이로 123-45<br />02-1234-5678<br />info@aube.com
+              </p>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__heading">Hours</h4>
+              <p class="footer__text">
+                Tue - Sun : 08:00 - 20:00<br />Monday : Closed
+              </p>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__heading">Social</h4>
+              <ul class="footer__menu">
+                <li>
+                  <a href="#" class="footer__link" aria-label="Instagram 열기"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__link" aria-label="Pinterest 열기"
+                    >Pinterest</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 AUBE. All Rights Reserved.</p>
+          <p>Designed by kimgsun</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/common.js"></script>
+    <script src="src/js/products/render.js"></script>
+  </body>
+</html>
