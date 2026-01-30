@@ -241,10 +241,17 @@
   }
 
   &__subtitle {
+    margin-bottom: 0;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     opacity: 0.4;
     font-size: $fs-body;
+  }
+
+  &__required-hint {
+    margin: 0 0 $sp-sm 0;
+    opacity: 0.5;
+    font-size: $fs-body-sm;
   }
 
   &__grid {
@@ -290,9 +297,7 @@
     font-size: $fs-body-sm;
     text-transform: uppercase;
     cursor: pointer;
-    transition:
-      opacity $transition-base,
-      color $transition-base,
+    transition: opacity $transition-base, color $transition-base,
       background-color $transition-base;
 
     &:hover {
@@ -319,14 +324,10 @@
       grid-column: 1 / -1;
     }
 
-    &:focus {
+    &:focus,
+    &:focus-visible {
       outline: none;
       border-bottom-color: var(--color-main);
-    }
-
-    &:focus-visible {
-      outline: 2px solid $clr-main;
-      outline-offset: 2px;
     }
 
     &--error {
