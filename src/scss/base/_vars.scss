@@ -1,0 +1,50 @@
+$white: #fff;
+$black: #000;
+$clr-main: #414141;
+$clr-point-sage: #a4bc9e;
+$clr-point-sand: #e6d7b9;
+$clr-border: #eee;
+$clr-bg-light: #f9f9f9;
+$clr-error: #c45c5c;
+
+$ff-serif: "Cormorant Garamond", serif;
+$ff-sans: "Noto Sans KR", sans-serif;
+
+$fs-base: 1.6rem;
+
+$fs-caption: 0.8rem;
+$fs-body-sm: 1rem;
+$fs-body: clamp(1.4rem, 1.2rem + 0.5vw, 1.6rem);
+$fs-body-lg: 1.75rem;
+$fs-subtitle: clamp(1.8rem, 1.4rem + 1vw, 2.6rem);
+$fs-title: clamp(2.6rem, 2rem + 1.2vw, 4rem);
+$fs-display: 3.6rem;
+$fs-hero: clamp(4rem, 2.5rem + 5vw, 9.6rem);
+$fs-hero-xl: clamp(4.2rem, 2.5rem + 6vw, 12.8rem);
+
+$lh-base: 1.6;
+$lh-mobile: 1.7;
+
+$sp-xs: 0.25rem;
+$sp-sm: 0.5rem;
+$sp-md: 1rem;
+$sp-lg: 1.5rem;
+$sp-xl: 2rem;
+$sp-2xl: 3rem;
+$sp-3xl: 4rem;
+$sp-4xl: 6rem;
+$sp-5xl: 8rem;
+$sp-6xl: 10rem;
+$sp-7xl: 12rem;
+
+$inner-width: 1200px;
+$page-padding: $sp-2xl;
+$page-padding-tablet: $sp-2xl;
+$page-padding-mobile: $sp-2xl;
+
+$small-mobile: 480px;
+$mobile: 768px;
+$tablet: 1024px;
+$laptop: 1280px;
+
+$transition-base: 0.3s ease-out;

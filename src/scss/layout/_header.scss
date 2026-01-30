@@ -1,0 +1,152 @@
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: $sp-lg $page-padding;
+  border-bottom: 1px solid rgba($clr-main, 0.05);
+  background-color: rgba($clr-bg-light, 1);
+  box-shadow: 0 2px 12px rgba($clr-main, 0.06);
+  backdrop-filter: blur(5px);
+
+  @include tablet {
+    padding: $sp-lg $page-padding-tablet;
+  }
+
+  @include small-mobile {
+    padding: $sp-lg $page-padding-mobile;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 101;
+    color: inherit;
+    font-family: var(--serif);
+    letter-spacing: 0.2em;
+    font-size: $fs-subtitle;
+    text-decoration: none;
+    transition: opacity $transition-base;
+
+    &:hover {
+      color: var(--color-point-sage);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: $sp-2xl;
+
+    @include tablet {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      height: 100vh;
+      padding: $sp-4xl $page-padding-mobile;
+      background-color: $clr-bg-light;
+      gap: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition:
+        opacity $transition-base,
+        visibility $transition-base,
+        transform $transition-base;
+
+      li {
+        width: 100%;
+      }
+    }
+  }
+
+  &__link {
+    color: inherit;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color $transition-base;
+    font-size: $fs-body-sm;
+
+    &:hover {
+      color: var(--color-point-sage);
+    }
+
+    &--active {
+      border-bottom: 1px solid var(--color-point-sage);
+      color: var(--color-point-sage);
+
+      @include tablet {
+        background-color: rgba($clr-point-sage, 0.1);
+        color: $clr-point-sage;
+        font-weight: 400;
+      }
+    }
+
+    @include tablet {
+      display: block;
+      width: 100%;
+      padding: $sp-md;
+      font-size: $fs-body;
+      transition:
+        background-color $transition-base,
+        color $transition-base;
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    z-index: 101;
+    display: none;
+    width: 20px;
+    height: 20px;
+    color: var(--color-main);
+    cursor: pointer;
+    transition: opacity $transition-base;
+
+    @include tablet {
+      display: block;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: currentColor;
+      box-shadow:
+        0 7px 0 currentColor,
+        0 14px 0 currentColor;
+    }
+  }
+
+  &.active {
+    @include tablet {
+      background-color: $clr-bg-light;
+
+      .nav__menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+      }
+
+      .nav__toggle,
+      .nav__logo {
+        position: relative;
+        z-index: 101;
+      }
+    }
+  }
+}

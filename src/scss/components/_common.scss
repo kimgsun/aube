@@ -1,0 +1,136 @@
+:root {
+  --color-main: #{$clr-main};
+  --color-point-sage: #{$clr-point-sage};
+  --color-point-sand: #{$clr-point-sand};
+  --color-bg-light: #{$clr-bg-light};
+  --serif: #{$ff-serif};
+  --sans: #{$ff-sans};
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--color-bg-light);
+  color: var(--color-main);
+  font-family: var(--sans);
+  line-height: $lh-base;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+
+  @include small-mobile {
+    line-height: $lh-mobile;
+  }
+}
+
+h1,
+h2,
+h3,
+.serif {
+  font-family: var(--serif);
+  font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  max-width: $inner-width;
+  margin: 0 auto;
+  padding: 0 $page-padding;
+
+  @include tablet {
+    padding: 0 $page-padding-tablet;
+  }
+
+  @include small-mobile {
+    padding: 0 $page-padding-mobile;
+  }
+}
+
+.reveal {
+  transform: translateY($sp-3xl);
+  opacity: 0;
+  transition:
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @for $i from 1 through 5 {
+    &.reveal-delay-#{$i} {
+      transition-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+.button--outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: $sp-sm $sp-xl;
+  border: 1px solid var(--color-main);
+  background-color: transparent;
+  color: inherit;
+  letter-spacing: 0.1em;
+  font-size: $fs-body-sm;
+  text-decoration: none;
+  transition:
+    opacity $transition-base,
+    color $transition-base,
+    background-color $transition-base,
+    transform $transition-base;
+
+  &:hover {
+    background-color: var(--color-main);
+    color: $white;
+    transform: translateY(-2px);
+  }
+}
+
+.visual__deco {
+  position: absolute;
+  z-index: -1;
+  color: rgba($clr-main, 0.02);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: $fs-title;
+  white-space: nowrap;
+  pointer-events: none;
+
+  @include small-mobile {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.event__image,
+.product__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $clr-border;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
